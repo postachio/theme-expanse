@@ -1,0 +1,32 @@
+.pagination {
+    display: block;
+    padding: @gutter*2 0 0 0;
+    margin: 0;
+    clear: both;
+    font-size: 0.85rem;
+    .medium();
+    .clearfix();
+    a {
+        display: block;
+        color: @lighttext;
+        span {
+            color: @lighttext;
+        }
+        &:hover {
+            color: @green;
+            span {
+                color: @green;
+            }
+        }
+        padding: 0;
+        margin: 0;
+    }
+    .prev {
+        float: left;
+        text-align: left;
+    }
+    .next {
+        float: right;
+        text-align: right;
+    }
+}

@@ -1,0 +1,143 @@
+.post {
+    display: block;
+    clear: both;
+    padding: @gutter*2.5 0 0 0;
+    a {
+      text-decoration: none;
+    }
+    a.back {
+        display: inline-block;
+        font-size: 0.85rem;
+        margin-bottom: @gutter/2;
+        &:hover {
+            span {
+                color: @green;
+            }
+        }
+    }
+    .post-content {
+      a {
+        text-decoration: underline;
+      }
+    }
+    h1 {
+        padding: 0 0 @gutter 0;
+        margin: 0;
+    }
+    h2, h3, h4 {
+        color: @red;
+        padding: @gutter/4 0 @gutter/4 0;
+        margin: 0;
+    }
+    .post-footer {
+        display: block;
+        clear: both;
+        padding-top: @gutter;
+        .clearfix();
+    }
+    .post-video {
+        padding: @gutter/2 0 @gutter/2 0;
+        iframe {
+            width: 100%;
+            height: 500px;
+            display: block;
+            border: 0;
+        }
+    }
+}
+
+.post-content {
+    .content(@gutter); /* find this in _assets/less/elements.less */
+}
+
+.post-tags {
+    list-style-type: none;
+    padding: @gutter/2 0 0 0;
+    li {
+        list-style-type: none;
+        display: inline-block;
+        margin-right: 10px;
+        a {
+            .transition(all 0.2s ease-in-out);
+            display: inline-block;
+            background-color: #afb7b5;
+            color: #fff;
+            padding: 1px 10px 1px 10px;
+            .rounded(15px);
+            font-size: 0.9rem;
+            &:hover {
+                background-color: @green;
+            }
+        }
+    }
+}
+
+.post-author {
+    cursor: default;
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: left;
+    img {
+        @size: 45px;
+        display: block;
+        float: left;
+        width: @size;
+        height: @size;
+        .rounded(50%);
+        overflow: hidden;
+        img {
+            width: @size;
+            height: @size;
+        }
+    }
+    p {
+        float: left;
+        @size: 0.85rem;
+        font-size: @size;
+        padding: 0 0 0 20px;
+        margin: 0;
+        span {
+            font-weight: bold;
+            display: block;
+            &.post-date {
+                color: @lighttext;
+                .light();
+                font-size: @size;
+            }
+            &.post-author-name {
+                font-size: @size;
+                .medium();
+                color: @green;
+            }
+        }
+    }
+}
+.post-options {
+    width: 50%;
+    float: right;
+    text-align: right;
+    li {
+        float: right;
+        padding-left: 40px;
+        span.options-label {
+            display: inline-block;
+            padding: @gutter/4 10px 0 0;
+            color: @lighttext;
+            font-size: 0.85rem;
+        }
+        a {
+            .medium();
+            font-size: 0.9rem;
+            i {
+                position: relative;
+                top: 3px;
+                font-size: 1rem;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+.post-comments {
+    padding-top: @gutter;
+}

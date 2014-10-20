@@ -1,0 +1,23 @@
+button,
+a.btn {
+    .transition(all 0.2s ease-in-out);
+    border: 0;
+    display: inline-block;
+    color: @white;
+    cursor: pointer;
+    padding: 15px 30px 15px 30px;
+    text-transform: uppercase;
+    background-color: @red;
+    font-size: 0.9rem;
+    &:hover {
+        background-color: @text;
+    }
+    &.btn-mini {
+        padding: 7px 14px 7px 14px;
+        font-size: 0.75rem;
+        background-color: @text;
+        &:hover {
+            background-color: @black;
+        }
+    }
+}

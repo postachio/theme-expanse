@@ -1,0 +1,41 @@
+footer {
+    position: relative;
+    display: block;
+    padding: @gutter/2 0 @gutter/2 0;
+    margin: @gutter*2.5 0 0 0;
+    font-size: 0.85rem;
+    border-top: 1px solid @hr;
+    .clearfix();
+    p {
+        padding: 0;
+        margin: 0;
+        color: @lighttext;
+    }
+    a, i {
+        color: @lighttext;
+        &:hover {
+            color: @green;
+        }
+    }
+    i {
+        font-size: 1.1rem;
+    }    
+    .left {
+        width: 60%;
+        text-align: left;
+    }
+    .right {
+        width: 40%;
+        text-align: right;
+    }
+    .rainbow {
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        background: url(../images/rainbow-bg.png) repeat-x @white top left;
+        background-size: 55%;
+        width: 100%;
+        height: 4px;
+        z-index: 1000;
+    }    
+}

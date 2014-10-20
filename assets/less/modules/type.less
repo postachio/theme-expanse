@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,300italic,400italic,500italic);
+@import url(http://postach.io/static/themes/_assets/symbolset/ss-pika.css);
+
+@base: 1rem;
+
+body {
+    font-size: 100%;
+    font-family: 'Roboto', helvetica, arial, sans-serif;
+    color: @text;
+    line-height: 1.5rem;
+    .light();
+}
+
+h1, h2, h3, h4 {
+    color: @text;
+    padding: 0 0 @gutter 0;
+    .light();
+}
+
+h1 { font-size: @base*3; line-height:@base*3*1.4; }
+h2 { font-size: @base*2; line-height:@base*2*1.4; }
+h3 { font-size: @base*2; line-height:@base*2*1.4; }
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: @text;
+
+    &:hover {
+        color: @green;
+    }
+}
+
+.light() {
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+.medium() {
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+.bold() {
+    font-family: 'Roboto';
+    font-weight: 700;
+}

@@ -1,0 +1,64 @@
+/* Less than 900px width */
+@media screen and (max-width: 900px) {
+    .container {
+        width: 70%;
+        &.wide {
+            width: 100%;
+            padding: 0 @gutter 0 @gutter;
+        }
+    }
+    header {
+        .container {
+            &.wide {
+                padding: @gutter;
+            }
+        }
+    }
+}
+
+/* Less than 730px width */
+@media screen and (max-width: 730px) {
+    .post {
+        .post-footer {
+            .post-author {
+                width: 20%;
+                p {
+                    display: none;
+                }
+                img {
+                    @size: 30px;
+                    width: @size;
+                    height: @size;
+                }                
+            }
+            .post-options {
+                width: 80%;
+            }
+        }
+    }
+}
+
+/* Less than 600px width */
+@media screen and (max-width: 600px) {
+    @gutter: 30px;
+    .container {
+        width: 100%;
+        padding: 0 @gutter 0 @gutter;
+        &.wide {
+            width: 100%;
+            padding: 0 @gutter 0 @gutter;            
+        }
+    }
+    header {
+        .container {
+            &.wide {
+                padding: @gutter;
+            }
+        }
+    }
+}
+
+/* Less than 479px width */
+@media screen and (max-width: 479px) {
+
+}
