@@ -1,6 +1,6 @@
 {
   "name": "theme-expanse",
-  "description": "The official repository for Postach.io's default theme, Expanse. Fork this to use it as a boilerplate for your own site.",
+  "description": "The official repository for Postach.io's default theme, Expanse. Fork this to use it as a boilerplate.",
   "devDependencies": {
     "gulp": "~3.8.7",
     "gulp-concat": "~2.3.4",
